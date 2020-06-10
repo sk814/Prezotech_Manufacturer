@@ -1,0 +1,404 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Bootstrap CSS -->
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static "style.css" %}">
+
+     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="{% static "logo.png" %}">
+  <title>Label manufacturer</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <!-- logo -->
+      <a href="" class="navbar-brand">
+        <img src="https://i.ibb.co/523F1fP/poster5-20-12359-1.png"  width="45" height="35">
+      </a>
+
+      <a href="" class="navbar-brand">Prezotech</a>
+      <a href="https://api.whatsapp.com/send?phone=917529984220" style="font-size:17px;color:grey">
+<!--        Send Message</a>-->
+<!--      <a href="whatsapp://send?text=Hello World!&phone=+917529984220">-->
+<!--        <i class="fa fa-whatsapp style="font-size:22px;color:blue" " aria-hidden="true"></i>-->
+        Send Msg <i class="fa fa-whatsapp" style="font-size:23px;color:#25D366; "></i>
+      </a>
+
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="homepage.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Products & Services</a>
+          </li>
+          <li class="nav-item">
+            <a href = "#newsletter" class="nav-link">Connect with Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SHOWCASE SLIDER -->
+  <section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 ">
+          <div class="container">
+            <div class="carousel-caption d-sm-block text-right mb-5" class="text-dark">
+              <h1 class="brown_bk"><span>Contact Us</span></h1>
+              <p class="lead"><span>
+                Phone Number:
+                  General Query: +91 9990768844 <br>
+                  Sales Team: +91 9990764567<br>
+                  Manufacturing Team: +91 9990768876<br>
+                  Technical Team: +91 9990768833
+              </span></p>
+              <a href="https://www.prezotech.com/enquiry.html" target="_blank" class="btn btn-danger btn-lg">Contact Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-sm-block mb-5">
+              <h1 class="brown_bk"><span>Reviews</span></h1>
+              <p class="lead"><span>We have the most satisfied customers.
+                Check out customers review in different sites.</span></p>
+              <a target="_blank" href="https://www.google.com/search?safe=active&tbm=lcl&sxsrf=ALeKk01Q1Rq0ZRY_DswG94FRSh3b8_7qFg%3A1591739597842&ei=zQTgXs_3Mt_S1fAP3OakmAo&q=prezotech+solutions+private+limited&oq=Prezotech+sol&gs_l=psy-ab.3.0.35i39k1l2j0.878.1332.0.2388.4.4.0.0.0.0.128.386.3j1.4.0....0...1c.1.64.psy-ab..0.4.386...0i30k1.0.a1stxb_bjpo#rlfi=hd:;si:17620352125786189722,l,CiNwcmV6b3RlY2ggc29sdXRpb25zIHByaXZhdGUgbGltaXRlZEjUysywg6uAgAhaWgojcHJlem90ZWNoIHNvbHV0aW9ucyBwcml2YXRlIGxpbWl0ZWQQABABEAIQAxgAGAEYAhgDIiNwcmV6b3RlY2ggc29sdXRpb25zIHByaXZhdGUgbGltaXRlZA;mv:[[28.633411,77.31693310000001],[28.629303200000003,77.31207959999999]]"
+                 class="btn btn-primary btn-sm"> Google</a>
+              <a target="_blank" href="https://www.justdial.com/Delhi/Prezotech-Solutions-Pvt-Ltd-Near-Nexa-Maruti-Showroom-Ghazipur/011PXX11-XX11-171218141608-Q5M6_BZDET/reviews/page-20?xid=THVkaGlhbmEgV292ZW4gTGFiZWwgTWFudWZhY3R1cmVycyBMb2xheQ=="
+                 class="btn btn-primary btn-sm"> JustDial</a>
+              <a target="_blank" href="https://www.indiamart.com/prezotech/testimonial.html"
+                 class="btn btn-primary btn-sm"> IndiaMart</a>
+              <a target="_blank" href="https://www.facebook.com/Prezotech/reviews/?ref=page_internal"
+                 class="btn btn-primary btn-sm"> Facebook</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item carousel-image-3 active">
+          <div class="container">
+            <div class="carousel-caption  d-sm-block text-right mb-5">
+              <h1 class="brown_bk"><span>Prezotech Label Manufacturer</span></h1>
+              <p class="lead"><span>Leader in the field of label manufacturing and Barcode related solution provider.</span></p>
+              <a href="about.html" class="btn btn-success btn-lg">Learn More About Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  <!--HOME ICON SECTION  -->
+  <section id="home-icons" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-handshake fa-3x mb-2"></i>
+          <h3><b>TRUST!</b></h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-user-lock fa-3x mb-2"></i>
+          <h3><b>COMMITMENT!</b></h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-thumbs-up fa-3x mb-2"></i>
+          <h3><b>QUALITY!</b></h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME HEADING SECTION -->
+  <section id="home-heading" class="p-5">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container pt-5">
+            <h1>Our Motto: Customer First!</h1>
+            <p class="d-none d-md-block">
+              "Happy customers are your biggest advocates and can become your most successful sales team."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO SECTION -->
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h3>Our Team is Our Family!</h3>
+          <p>With a bunch of experienced team members and Japanese machines we deliver standard and on time
+            label with any size demanded.</p>
+          <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>
+        </div>
+        <div class="col-md-6">
+          <img src="{% static "label.gif" %}" alt="" class="img-fluid">
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO PLAY -->
+  <section id="video-play">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <a href="#" class="video" data-video="https://www.youtube.com/embed/cafgEkr2wcc" data-toggle="modal" data-target="#videoModal">
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1>See What We Do</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h1 class="text-center">Photo Gallery</h1>
+      <p class="text-center">Check out our photos</p>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <a href="{% static "one.jpg" %}" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
+            data-width="560">
+            <img src="{% static "one.jpg" %}" alt="" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="{% static "two.png" %}" data-toggle="lightbox" data-gallery="img-gallery" data-height="561"
+            data-width="561">
+            <img src="{% static "two.png" %}" alt="" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="{% static "three.jpg" %}" data-toggle="lightbox" data-gallery="img-gallery" data-height="562"
+            data-width="562">
+            <img src="{% static "three.jpg" %}" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <a href="{% static "four.jpg" %}" data-toggle="lightbox" data-gallery="img-gallery" data-height="563"
+            data-width="563">
+            <img src="{% static "four.jpg" %}" alt="" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="{% static "five.png" %}" data-toggle="lightbox" data-gallery="img-gallery" data-height="564"
+            data-width="564">
+            <img src="{% static "five.png" %}" alt="" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="{% static "six.jpeg" %}" data-toggle="lightbox" data-gallery="img-gallery" data-height="565"
+            data-width="565">
+            <img src="{% static "six.jpeg" %}" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+
+
+  <section id="newsletter" class="text-center p-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class ="newsletter1 {% if active_tab == 'newsletter1' %} active{% endif %}">
+
+            <label><h1>Get In Touch</h1></label>
+
+<!--            <h2>{{ error }}</h2>-->
+
+               {% for message in messages %}
+
+                    <div class="alert alert-success">
+                        <a class="close" href="#" data-dismiss="alert">×</a>
+
+                       <h6> {{ message }} </h6>
+
+                    </div>
+            {% endfor %}
+
+
+            <form method="POST" class="form-inline justify-content-center">
+            {% csrf_token %}
+                <input type="text" name="name" class="form-control mb-2 mr-2" placeholder="Enter Name" id="name" required>
+                <input type="tel" name="phone" class="form-control mb-2 mr-2" placeholder="Enter Phone" id="phone" required>
+                <input type="email" name="email" class="form-control mb-2 mr-2" placeholder="Enter Email" id="email" >
+                <input type="text" name="query" class="form-control mb-2 mr-2" placeholder="Any Query?" id="query">
+            <button class="btn btn-primary mb-2" type="submit">Send</button>
+
+            </form>
+          </div>
+
+            <br>
+<!--          Social media-->
+
+          <li class="nav-item ml-auto active">
+            <a href="https://www.prezotech.com/" class="nav-link" >
+              <input type="image" src="https://i.ibb.co/kchdgsK/poster5-23-205140-1.png" />
+            </a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a href="https://www.instagram.com/prezotech/" class="nav-link"><i class="fab fa-instagram" style="font-size:32px;color:red"></i></a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a href="https://www.youtube.com/channel/UCKwa5sBdl0_afSyGJTT4Nvg" class="nav-link"><i class="fab fa-youtube" style="font-size:32px;color:red" ></i></a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a href="https://www.facebook.com/Prezotech" class="nav-link"><i class="fab fa-facebook-f" style="font-size:27px;color:blue" ></i></a>
+          </li>
+
+          <li class="nav-item ml-auto">
+            <a href="https://www.linkedin.com/company/prezotech/?originalSubdomain=in" class="nav-link"><i class="fa fa-linkedin" style="font-size:29px;color:blue" ></i></a>
+          </li>
+
+          <li class="nav-item ml-auto">
+            <a href="https://twitter.com/prezotechsol" class="nav-link"><i class="fa fa-twitter" style="font-size:29px;color:blue" ></i></a>
+          </li>
+
+          <li class="nav-item ml-auto">
+            <a href="http://prezotech.in/feedback" class="nav-link"><i class="fas fa-comment-dots" style="font-size:29px;color:purple" ></i></a>
+          </li>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> Prezotech</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- VIDEO MODAL -->
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // Configure Slider
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: 'hover'
+    });
+
+    // Lightbox Init
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+
+    // Video Play
+    $(function () {
+      // Auto play modal video
+      $(".video").click(function () {
+        var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>
