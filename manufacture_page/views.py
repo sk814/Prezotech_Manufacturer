@@ -5,7 +5,7 @@ from django.http import HttpResponseRedirect
 from .forms import ManuForm
 def home(request):
     if request.method == 'GET':
-        return render(request, 'homepage.html', {'form': ManuForm()})
+        return render(request, 'manufacture_page/homepage.html', {'form': ManuForm()})
     else:
         try:
             form = ManuForm(request.POST)
@@ -30,12 +30,12 @@ def home(request):
                 return redirect(request.META['HTTP_REFERER'], {'form': ManuForm(), 'error': errmsg})
             return redirect(home)
         except ValueError:
-            return render(request, 'homepage.html', {'form': ManuForm(), 'error':'Bad data passed in!'})
+            return render(request, 'manufacture_page/homepage.html', {'form': ManuForm(), 'error':'Bad data passed in!'})
 
 def about(request):
-        return render(request, 'about.html')
+        return render(request, 'manufacture_page/about.html')
 
 
 def services(request):
-    return render(request, 'services.html')
+    return render(request, 'manufacture_page/services.html')
 
