@@ -39,3 +39,7 @@ def about(request):
 def services(request):
     return render(request, 'manufacture_page/services.html')
 
+def newsletter(request):
+    return render(request, 'manufacture_page/homepage.html#newsletter')
+
+

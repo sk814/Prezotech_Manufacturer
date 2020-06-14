@@ -19,9 +19,7 @@ from manufacture_page import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
-    path('homepage.html', views.home),
-    path('about.html', views.about),
-    path('services.html', views.services),
-    path('homepage.html#newsletter', views.home),
+    path('', views.home, name='home'),
+    path('about/', views.about, name='about'),
+    path('services/', views.services, name='services'),
 ]

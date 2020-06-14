@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '2dh-pafar$e$te&(m)b^z&yif035l1q=gid!q%$*+#l6r*&%*x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['prezotech.in']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -122,5 +122,3 @@ USE_TZ = True
 
 # STATICFILES_DIRS=[BASE_DIR+"/static"]
 STATIC_URL = '/static/'
-STATIC_ROOT= os.path.join(BASE_DIR, 'static')
-

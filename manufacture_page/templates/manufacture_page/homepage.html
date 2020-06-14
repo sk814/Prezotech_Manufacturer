@@ -35,12 +35,14 @@
       </a>
 
       <a href="" class="navbar-brand">Prezotech</a>
+<!--      //for mobile-->
       <a href="https://api.whatsapp.com/send?phone=917529984220" style="font-size:17px;color:grey">
-<!--        Send Message</a>-->
-<!--      <a href="whatsapp://send?text=Hello World!&phone=+917529984220">-->
-<!--        <i class="fa fa-whatsapp style="font-size:22px;color:blue" " aria-hidden="true"></i>-->
-        Send Msg <i class="fa fa-whatsapp" style="font-size:23px;color:#25D366; "></i>
-      </a>
+     Send Msg <i class="fab fa-whatsapp" style="font-size:23px;color:#25D366; "></i>
+     </a>
+<!--      //for web/laptop-->
+      <a href="https://web.whatsapp.com/send?phone=+917529984220">
+        Send Msg <i class="fab fa-whatsapp" style="font-size:23px;color:#25D366; "></i>
+     </a>
 
 
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -49,13 +51,14 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a href="homepage.html" class="nav-link">Home</a>
+
+            <a href="{% url 'home' %}" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">About Us</a>
+            <a href="{% url 'about' %}" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="services.html" class="nav-link">Products & Services</a>
+            <a href="{% url 'services' %}" class="nav-link">Products & Services</a>
           </li>
           <li class="nav-item">
             <a href = "#newsletter" class="nav-link">Connect with Us</a>
@@ -114,7 +117,7 @@
             <div class="carousel-caption  d-sm-block text-right mb-5">
               <h1 class="brown_bk"><span>Prezotech Label Manufacturer</span></h1>
               <p class="lead"><span>Leader in the field of label manufacturing and Barcode related solution provider.</span></p>
-              <a href="about.html" class="btn btn-success btn-lg">Learn More About Us</a>
+              <a href="{% url 'about' %}" class="btn btn-success btn-lg">Learn More About Us</a>
             </div>
           </div>
         </div>
@@ -153,6 +156,8 @@
     </div>
   </section>
 
+  <i  class="fab fa-whatsapp fa-2x"></i>
+
   <!-- HOME HEADING SECTION -->
   <section id="home-heading" class="p-5">
     <div class="dark-overlay">
@@ -177,7 +182,7 @@
           <h3>Our Team is Our Family!</h3>
           <p>With a bunch of experienced team members and Japanese machines we deliver standard and on time
             label with any size demanded.</p>
-          <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>
+          <a href="{% url 'about' %}" class="btn btn-outline-danger btn-lg">Learn More</a>
         </div>
         <div class="col-md-6">
           <img src="{% static "/manufacture_page/label.gif" %}" alt="" class="img-fluid">
@@ -359,7 +364,7 @@
     </div>
   </div>
 
-
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -369,6 +374,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
   <script>
+  .fa-whatsapp  {
+  color:#fff;
+  background:
+  linear-gradient(#25d366,#25d366)10px 84%/10px 15px no-repeat,
+  radial-gradient(#25d366 60%,transparent 0);
+}
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
 

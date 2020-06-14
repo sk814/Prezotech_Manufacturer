@@ -22,11 +22,11 @@
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <div class="container">
              <!-- logo -->
-      <a href="homepage.html" class="navbar-brand">
+      <a href="{% url 'home' %}" class="navbar-brand">
         <img src="https://i.ibb.co/523F1fP/poster5-20-12359-1.png"  width="45" height="35">
       </a>
 
-          <a href="homepage.html" class="navbar-brand">Prezotech</a>
+          <a href="{% url 'home' %}" class="navbar-brand">Prezotech</a>
       <a href="https://api.whatsapp.com/send?phone=917529984220" style="font-size:17px;color:grey">
 <!--        Send Message</a>-->
 <!--      <a href="whatsapp://send?text=Hello World!&phone=+917529984220">-->
@@ -40,16 +40,16 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="{% url 'home' %}" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">About Us</a>
+            <a href="{% url 'about' %}" class="nav-link">About Us</a>
           </li>
           <li class="nav-item active">
-            <a href="services.html" class="nav-link">Products & Services</a>
+            <a href="{% url 'services' %}" class="nav-link">Products & Services</a>
           </li>
           <li class="nav-item">
-            <a href= "homepage.html#newsletter" class="nav-link">Connect with us</a>
+            <a href= "{% url 'home' %}#newsletter" class="nav-link">Connect with us</a>
           </li>
 
         </ul>
@@ -72,7 +72,7 @@
 
   <br>
   <div>
-    <a href="https://www.indiamart.com/prezotech/barcode-labels-printer.html" class="btn btn-danger btn-block btn-lg " target="_blank"><b><u>Click here to get all product in details</u></b></a>
+    <a href="https://www.indiamart.com/prezotech/barcode-labels-printer.html" class="btn btn-danger btn-block btn-lg " target="_blank"><b>Click here to get all product details</b></a>
 </div>
 
   <!-- SERVICES SECTION -->
@@ -246,7 +246,7 @@
   </section>
 
   <div>
-    <a href="https://www.indiamart.com/prezotech/barcode-labels-printer.html" class="btn btn-danger btn-lg btn-block" target="_blank"><b><u>Click here to get all product in details</u></b></a>
+    <a href="https://www.indiamart.com/prezotech/barcode-labels-printer.html" class="btn btn-danger btn-lg btn-block" target="_blank"><b><u>Click here to get all product details</u></b></a>
 </div>
   <br>
 
